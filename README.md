@@ -38,22 +38,38 @@ Once the final calculation table is updated in the database, the tech team will 
 2.	Miscellaneous Leads table will act as a truth of source, at any point of time, we can refer this table to check the status of LeadId.
 3.	After every iteration of the model, we need to generate a summary report for successful sales and an error report in case if there is any error in payout calculations. Both reports should be included with an automated email to the concerned departments.
 4.	A final table should have the following columns to push records into database:
+    \
     a.	CreatedAt
+  	\
     b.	SourceType
-    c.	MediumType
-    d.	ProductType
-    e.	SPId
-    f.	LeadId
-    g.	Status
-    h.	SubStatus
-    i.	DateOfSale
-    j.	DateOfRevenue
-    k.	KPI1PayinAmount
-    l.	KPI1PayoutAmount
-    m.	KPI2PayinAmount
-    n.	KPI2PayoutAmount
+    \
+  	c.	MediumType
+    \
+  	d.	ProductType
+    \
+  	e.	SPId
+    \
+  	f.	LeadId
+    \
+  	g.	Status
+    \
+  	h.	SubStatus
+    \
+  	i.	DateOfSale
+    \
+  	j.	DateOfRevenue
+    \
+  	k.	KPI1PayinAmount
+    \
+  	l.	KPI1PayoutAmount
+    \
+  	m.	KPI2PayinAmount
+    \
+  	n.	KPI2PayoutAmount
+    \
     o.	TotalPayin
-    p.	TotalPayout
+    \
+  	p.	TotalPayout
 \
 \
 **Data Flow Diagram:**
