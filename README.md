@@ -5,6 +5,7 @@ Through the ShiftPay app, individuals can create profiles and become Shift Partn
 When a sale is completed according to predefined rules, the affiliated financial organization pays a predetermined amount to ShiftPay. ShiftPay then deducts a commission from this amount and disburses the remaining funds to the respective Shift Partner.
 In summary, ShiftPay facilitates financial independence by allowing individuals to become SPs, sell financial products, and earn commissions on successful sales through their mobile app.
 \
+\
 **Problem Statement:**
 \
 As the ShiftPay app gains popularity and the number of Shift Partners (SPs) increases, managing the payout process for successful sales becomes increasingly challenging. Currently, ShiftPay relies on manually processing the MIS reports from financial organizations to determine successful sales events based on predetermined criteria. However, with the continuous growth of the app and the addition of more financial products and services, the manual handling of MIS reports becomes inefficient and there are more chances of errors in payout calculations.
