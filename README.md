@@ -36,7 +36,6 @@ Once the final calculation table is updated in the database, the tech team will 
 \
 \
 **Note:**
-\
 1.	All the payin and payout rules are defined in payin_payout_rules.csv file with success criteria.
 2.	Miscellaneous Leads table will act as a truth of source, at any point of time, we can refer this table to check the status of LeadId.
 3.	After every iteration of the model, we need to generate a summary report for successful sales and an error report in case if there is any error in payout calculations. Both reports should be included with an automated email to the concerned departments.
