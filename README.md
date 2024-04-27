@@ -12,6 +12,7 @@ Moreover, ShiftPay wants to ensure that the automation model is flexible and sca
 \
 In summary, ShiftPay seeks to build an Automated Payout System in Python to efficiently manage the increasing number of SPs and sales transactions, while also ensuring flexibility for future expansion of services.
 \
+\
 **Data Sets And Success Event Calculations:**
 \
 **1.	MIS Integration:**
@@ -32,7 +33,6 @@ After processing the MIS and miscellaneous leads data, a final calculation table
 Once the final calculation table is updated in the database, the tech team will take over responsibility for executing the final payout to the SPs. This separation of tasks ensures a clear and efficient workflow, with the data pipeline handling the data processing and table updating, while the tech team manages the payout execution.
 \
 **Note:**
-\
 1.	All the payin and payout rules are defined in payin_payout_rules.csv file with success criteria.
 2.	Miscellaneous Leads table will act as a truth of source, at any point of time, we can refer this table to check the status of LeadId.
 3.	After every iteration of the model, we need to generate a summary report for successful sales and an error report in case if there is any error in payout calculations. Both reports should be included with an automated email to the concerned departments.
@@ -53,10 +53,10 @@ Once the final calculation table is updated in the database, the tech team will 
     n.	KPI2PayoutAmount
     o.	TotalPayin
     p.	TotalPayout
-
+\
 **Data Flow Diagram:**
 ![payout_automation](https://github.com/manujsinghwal/automation-payout-model/assets/40256851/518ca272-cdec-44ee-a59c-679f900b48c0)
-
+\
 **Automated Email Summary:**
 Management would like to have an summary report for every iteration that should be pushed through an automated email. This report should contain the summary for success events and errors.
 ![image](https://github.com/manujsinghwal/automation-payout-model/assets/40256851/b7e7eb0a-d0ac-4098-aa73-5ef240dd84ab)
