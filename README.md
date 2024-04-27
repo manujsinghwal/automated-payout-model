@@ -32,6 +32,7 @@ Whenever there is a status update for a lead ID from "Pending" to "Success," a p
 After processing the MIS and miscellaneous leads data, a final calculation table will be generated to serve as the basis for calculating payouts to Shift Partners (SPs). A data pipeline will be developed to handle the integration, processing, and updating of this table in the database.
 Once the final calculation table is updated in the database, the tech team will take over responsibility for executing the final payout to the SPs. This separation of tasks ensures a clear and efficient workflow, with the data pipeline handling the data processing and table updating, while the tech team manages the payout execution.
 \
+\
 **Note:**
 1.	All the payin and payout rules are defined in payin_payout_rules.csv file with success criteria.
 2.	Miscellaneous Leads table will act as a truth of source, at any point of time, we can refer this table to check the status of LeadId.
@@ -55,6 +56,7 @@ Once the final calculation table is updated in the database, the tech team will 
     p.	TotalPayout
 **Data Flow Diagram:**
 ![payout_automation](https://github.com/manujsinghwal/automation-payout-model/assets/40256851/518ca272-cdec-44ee-a59c-679f900b48c0)
+\
 \
 **Automated Email Summary:**
 Management would like to have an summary report for every iteration that should be pushed through an automated email. This report should contain the summary for success events and errors.
