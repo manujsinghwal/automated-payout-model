@@ -1,4 +1,4 @@
-# automation-payout-model
+# Automation Payout Model
 **ShiftPay**, a new fintech startup, aims to empower individuals with financial independence through their innovative platform. By partnering with established financial organizations, ShiftPay offers a diverse range of financial products and services through their mobile app.
 Through the ShiftPay app, individuals can create profiles and become Shift Partners (SPs). These SPs have the opportunity to sell the financial products and services offered by ShiftPay to themselves and others. Each successful sale made by an SP triggers a commission payout process.
 When a sale is completed according to predefined rules, the affiliated financial organization pays a predetermined amount to ShiftPay. ShiftPay then deducts a commission from this amount and disburses the remaining funds to the respective Shift Partner.
@@ -46,4 +46,5 @@ Once the final calculation table is updated in the database, the tech team will 
     o.	TotalPayin
     p.	TotalPayout
 
+**Data Flow Diagram**
 ![payout_automation](https://github.com/manujsinghwal/automation-payout-model/assets/40256851/518ca272-cdec-44ee-a59c-679f900b48c0)
