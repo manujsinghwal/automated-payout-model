@@ -46,5 +46,9 @@ Once the final calculation table is updated in the database, the tech team will 
     o.	TotalPayin
     p.	TotalPayout
 
-**Data Flow Diagram**
+**Data Flow Diagram:**
 ![payout_automation](https://github.com/manujsinghwal/automation-payout-model/assets/40256851/518ca272-cdec-44ee-a59c-679f900b48c0)
+
+**Automated Email Summary:**
+Management would like to have an summary report for every iteration that should be pushed through an automated email. This report should contain the summary for success events and errors.
+![image](https://github.com/manujsinghwal/automation-payout-model/assets/40256851/b7e7eb0a-d0ac-4098-aa73-5ef240dd84ab)
