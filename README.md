@@ -34,6 +34,10 @@ Whenever there is a status update for a lead ID from "Pending" to "Success," a p
 After processing the MIS and miscellaneous leads data, a final calculation table will be generated to serve as the basis for calculating payouts to Shift Partners (SPs). A data pipeline will be developed to handle the integration, processing, and updating of this table in the database.
 Once the final calculation table is updated in the database, the tech team will take over responsibility for executing the final payout to the SPs. This separation of tasks ensures a clear and efficient workflow, with the data pipeline handling the data processing and table updating, while the tech team manages the payout execution.
 \
+**4.	Error Handling:**
+\
+In every iteration, there might be some errors while calculating the success events for any MIS, to handle most of these situation, we did the exception handling for calculations, in case of no error, all good, or if there is any error, then a message will be attached to the automated email with the MIS details in which we got the error while calculating the payouts. Also these error logs will be save to another file named as error_logs.csv with actual error description.
+\
 \
 **Note:**
 1.	All the payin and payout rules are defined in payin_payout_rules.csv file with success criteria.
@@ -74,11 +78,20 @@ Once the final calculation table is updated in the database, the tech team will 
   	p.	TotalPayout
 \
 \
-**Data Flow Diagram:**
+**Data Flow Diagram For This Model:**
 ![payout_automation](https://github.com/manujsinghwal/automation-payout-model/assets/40256851/518ca272-cdec-44ee-a59c-679f900b48c0)
 \
 \
 **Automated Email Summary:**
 \
 Management would like to have an summary report for every iteration that should be pushed through an automated email. This report should contain the summary for success events and errors.
+\
+\
+**Summary In Case Of Error:**
+\
+![image](https://github.com/manujsinghwal/automation-payout-model/assets/40256851/51a8f929-4bfc-48d5-bb6b-b6db5a8a12ef)
+\
+\
+**Summary In Case Of No Error:**
+\
 ![image](https://github.com/manujsinghwal/automation-payout-model/assets/40256851/b7e7eb0a-d0ac-4098-aa73-5ef240dd84ab)
