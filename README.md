@@ -94,4 +94,5 @@ Management would like to have an summary report for every iteration that should 
 \
 **Summary In Case Of No Error:**
 \
-![image](https://github.com/manujsinghwal/automation-payout-model/assets/40256851/b7e7eb0a-d0ac-4098-aa73-5ef240dd84ab)
+![image](https://github.com/user-attachments/assets/570a5f5b-c4d9-4cda-9d74-8b8d88662cdf)
+
