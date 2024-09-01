@@ -89,7 +89,7 @@ Management would like to have an summary report for every iteration that should 
 \
 **Summary In Case Of Error:**
 \
-![image](https://github.com/manujsinghwal/automation-payout-model/assets/40256851/51a8f929-4bfc-48d5-bb6b-b6db5a8a12ef)
+![image](https://github.com/user-attachments/assets/562d503f-2327-41ee-91a9-406ff0c10329)
 \
 \
 **Summary In Case Of No Error:**
