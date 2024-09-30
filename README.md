@@ -1,4 +1,4 @@
-# Automation Payout Model
+# Automated Payout Model
 \
 **ShiftPay**, a new fintech startup, aims to empower individuals with financial independence through their innovative platform. By partnering with established financial organizations, ShiftPay offers a diverse range of financial products and services through their mobile app.
 Through the ShiftPay app, individuals can create profiles and become Shift Partners (SPs). These SPs have the opportunity to sell the financial products and services offered by ShiftPay to themselves and others. Each successful sale made by an SP triggers a commission payout process.
