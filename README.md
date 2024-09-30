@@ -6,7 +6,6 @@ When a sale is completed according to predefined rules, the affiliated financial
 In summary, ShiftPay facilitates financial independence by allowing individuals to become SPs, sell financial products, and earn commissions on successful sales through their mobile app.
 
 
-\
 
 * **Problem Statement:**
 \
@@ -17,7 +16,7 @@ Moreover, ShiftPay wants to ensure that the automation model is flexible and sca
 In summary, ShiftPay seeks to build an Automated Payout System in Python to efficiently manage the increasing number of SPs and sales transactions, while also ensuring flexibility for future expansion of services.
 
 
-\
+
 * **Data Sets And Success Event Calculations:**
 \
 **1.	MIS Integration:**
@@ -42,7 +41,7 @@ Once the final calculation table is updated in the database, the tech team will 
 In every iteration, there might be some errors while calculating the success events for any MIS, to handle most of these situation, we did the exception handling for calculations, in case of no error, all good, or if there is any error, then a message will be attached to the automated email with the MIS details in which we got the error while calculating the payouts. Also these error logs will be save to another file named as error_logs.csv with actual error description.
 
 
-\
+
 * **Note:**
 1.	All the payin and payout rules are defined in payin_payout_rules.csv file with success criteria.
 2.	Miscellaneous Leads table will act as a truth of source, at any point of time, we can refer this table to check the status of LeadId.
@@ -82,24 +81,24 @@ In every iteration, there might be some errors while calculating the success eve
   	p.	TotalPayout
 
 
-\
+
 * **Data Flow Diagram For This Model:**
 ![payout_automation](https://github.com/manujsinghwal/automation-payout-model/assets/40256851/518ca272-cdec-44ee-a59c-679f900b48c0)
 
 
-\
+
 * **Automated Email Summary:**
 \
 Management would like to have an summary report for every iteration that should be pushed through an automated email. This report should contain the summary for success events and errors.
 
 
-\
+
 * **Summary In Case Of Error:**
 \
 ![image](https://github.com/user-attachments/assets/562d503f-2327-41ee-91a9-406ff0c10329)
 
 
-\
+
 * **Summary In Case Of No Error:**
 \
 ![image](https://github.com/user-attachments/assets/570a5f5b-c4d9-4cda-9d74-8b8d88662cdf)
