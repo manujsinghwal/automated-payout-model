@@ -16,7 +16,7 @@ Moreover, ShiftPay wants to ensure that the automation model is flexible and sca
 In summary, ShiftPay seeks to build an Automated Payout System in Python to efficiently manage the increasing number of SPs and sales transactions, while also ensuring flexibility for future expansion of services.
 
 
-
+\\
 **Data Sets And Success Event Calculations:**
 
 \
