@@ -87,24 +87,24 @@ In every iteration, there might be some errors while calculating the success eve
 
 
 
-* **Data Flow Diagram For This Model:**
+**Data Flow Diagram For This Model:**
 ![payout_automation](https://github.com/manujsinghwal/automation-payout-model/assets/40256851/518ca272-cdec-44ee-a59c-679f900b48c0)
 
 
 
-* **Automated Email Summary:**
+**Automated Email Summary:**
 \
 Management would like to have an summary report for every iteration that should be pushed through an automated email. This report should contain the summary for success events and errors.
 
 
 
-* **Summary In Case Of Error:**
+**Summary In Case Of Error:**
 \
 ![image](https://github.com/user-attachments/assets/562d503f-2327-41ee-91a9-406ff0c10329)
 
 
 
-* **Summary In Case Of No Error:**
+**Summary In Case Of No Error:**
 \
 ![image](https://github.com/user-attachments/assets/570a5f5b-c4d9-4cda-9d74-8b8d88662cdf)
 
