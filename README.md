@@ -17,31 +17,30 @@ In summary, ShiftPay seeks to build an Automated Payout System in Python to effi
 
 
 
-
 **Data Sets And Success Event Calculations:**
 
-\
+
 **1.	MIS Integration:**
 \
 ShiftPay receives MIS reports from different financial organizations on daily, bi-weekly and weekly basis, currently limited to Savings Accounts and Personal Loans. These reports contain information about successful sales events. These MIS received through mails from the listed financial organizations. After receiving of these MIS, one dedicated team will upload these .csv files to the Azure container (for the simplicity of this project, we’ll read/write these files from/on local machine). In production, whenever there is any storage event occur in Azure container, a data pipeline will be triggered and run this model and calculate the payout for SPs.
 
-\
+
 **2.	Data Processing:**
 \
 ShiftPay's database contains miscellaneous leads data, including details about Shift Partners (SPs) and the leads generated through the ShiftPay app. It's important to note that while MIS reports may include additional leads, the system should filter and fetch only the leads generated through the ShiftPay app. Payouts will only be made for these specific leads.
 
-\
+
 **3.	Payout Events:**
 \
 Whenever there is a status update for a lead ID from "Pending" to "Success," a payout event should be triggered. This payout event will transfer the payout money to the SP's wallet. SPs can then choose to transfer the funds instantly to their bank account.
 
-\
+
 **4.	Final Calculation:**
 \
 After processing the MIS and miscellaneous leads data, a final calculation table will be generated to serve as the basis for calculating payouts to Shift Partners (SPs). A data pipeline will be developed to handle the integration, processing, and updating of this table in the database.
 Once the final calculation table is updated in the database, the tech team will take over responsibility for executing the final payout to the SPs. This separation of tasks ensures a clear and efficient workflow, with the data pipeline handling the data processing and table updating, while the tech team manages the payout execution.
 
-\
+
 **5.	Error Handling:**
 \
 In every iteration, there might be some errors while calculating the success events for any MIS, to handle most of these situation, we did the exception handling for calculations, in case of no error, all good, or if there is any error, then a message will be attached to the automated email with the MIS details in which we got the error while calculating the payouts. Also these error logs will be save to another file named as error_logs.csv with actual error description.
