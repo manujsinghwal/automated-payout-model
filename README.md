@@ -7,7 +7,7 @@ In summary, ShiftPay facilitates financial independence by allowing individuals 
 
 
 
-* **Problem Statement:**
+**Problem Statement:**
 \
 As the ShiftPay app gains popularity and the number of Shift Partners (SPs) increases, managing the payout process for successful sales becomes increasingly challenging. Currently, ShiftPay relies on manually processing the MIS reports from financial organizations to determine successful sales events based on predetermined criteria. However, with the continuous growth of the app and the addition of more financial products and services, the manual handling of MIS reports becomes inefficient and there are more chances of errors in payout calculations.
 To address this issue, ShiftPay aims to automate the payout process using Python. By building an Automated Payout System, ShiftPay can streamline the calculation and disbursement of commissions to SPs, allowing the company to focus on other tasks. The automated system will be designed to handle incoming MIS reports, identify successful sales events, calculate the appropriate payouts based on predetermined rules, and disburse commissions to SPs.
@@ -17,7 +17,7 @@ In summary, ShiftPay seeks to build an Automated Payout System in Python to effi
 
 
 
-* **Data Sets And Success Event Calculations:**
+**Data Sets And Success Event Calculations:**
 
 \
 **1.	MIS Integration:**
@@ -47,7 +47,7 @@ In every iteration, there might be some errors while calculating the success eve
 
 
 
-* **Note:**
+**Note:**
 1.	All the payin and payout rules are defined in payin_payout_rules.csv file with success criteria.
 2.	Miscellaneous Leads table will act as a truth of source, at any point of time, we can refer this table to check the status of LeadId.
 3.	After every iteration of the model, we need to generate a summary report for successful sales and an error report in case if there is any error in payout calculations. Both reports should be included with an automated email to the concerned departments.
